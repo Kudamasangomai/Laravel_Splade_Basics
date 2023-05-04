@@ -13,6 +13,7 @@ class Students extends Model
         'name',
         'email',
         'age',
-        'phone'
+        'phone',
+        'logo'
     ];
 }

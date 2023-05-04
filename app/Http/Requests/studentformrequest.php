@@ -29,6 +29,7 @@ class studentformrequest extends FormRequest
             'email'=>'required|unique:students,email',
             'age' => 'int',
             'phone'=>'required',
+            'logo'=> 'required',
         ];
     }
 }

@@ -12,6 +12,7 @@
 
                     {{-- <x-splade-form :for="$form" /> --}}
 
+       
 
                     <x-splade-form action="{{ route('students.store') }}" method="POST">
                         <x-splade-input name="email" label="Email address" />
@@ -21,6 +22,8 @@
                         <x-splade-input name="phone" :label="__('phone')" />
 
                         <x-splade-input type="number" min="0" max="65" name="age" :label="__('Age')" />
+
+                        <x-splade-file  name="logo"  :label="__('logo')" class="mt-4" filepond  preview accept="image/png" />
                      
                         <x-splade-submit  class="mt-4"/>
                     </x-splade-form>
