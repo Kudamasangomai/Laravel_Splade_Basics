@@ -9,9 +9,12 @@
             <x-splade-input id="password" type="password" name="password" :label="__('Password')" required autocomplete="current-password" />
             <x-splade-checkbox id="remember_me" name="remember" :label="__('Remember me')" />
 
-            <div class="flex items-center justify-end">
+            <div class="flex items-center justify-between">
+                <Link class="mr-8 text-sm text-gray-600 underline hover:text-gray-900" href="{{ route('register') }}">
+                    {{ __('Register') }}
+                </Link>
                 @if (Route::has('password.request'))
-                    <Link class="underline text-sm text-gray-600 hover:text-gray-900" href="{{ route('password.request') }}">
+                    <Link class="ml-10 text-sm text-gray-600 underline hover:text-gray-900" href="{{ route('password.request') }}">
                         {{ __('Forgot your password?') }}
                     </Link>
                 @endif
