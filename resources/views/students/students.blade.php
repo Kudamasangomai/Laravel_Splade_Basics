@@ -12,7 +12,7 @@
                 <div class="overflow-hidden border border-gray-200 md:rounded-lg">
 
                     
-                        <Link href="{{ route('students.create') }}" class="px-2 py-2 bg-red-500 rounded-sm">
+                        <Link href="{{ route('students.create') }}" class="px-2 py-32 bg-red-500 rounded-sm">
                         Create </Link>
                         <br/>
                       

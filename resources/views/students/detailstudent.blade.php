@@ -6,7 +6,7 @@
     </x-slot>
 
 
-    <div class="flex flex-col mt-6 ">
+    <div class="flex flex-col mt-6 bg-red-600 ">
         <div class="-mx-4 -my-2 overflow-x-auto sm:-mx-6 lg:-mx-8">
             <div class="inline-block min-w-full py-2 align-middle md:px-6 lg:px-8">
                 <div class="overflow-hidden border border-gray-200 md:rounded-lg">
@@ -17,7 +17,10 @@
                         <li> {{ $student->email }} </li>
                         <li> {{ $student->phone }} </li>
                         <li> {{ $student->age }} </li>
+                 <img src="{{ asset('/storage/storage/app/logo/pBaU1wzRhrPlqOcObDEdynOkQVRXmAmhdslo80dO.jpg')}}" />
                     </ul>
+                    <img alt="user-avatar" class="img-rounded img-fluid"
+                    src="/storage/logo/{{$student->logo}}">
                        
                     <Link href="{{ route('students.edit',$student) }}">Edit</Link>
                         

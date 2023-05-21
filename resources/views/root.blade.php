@@ -12,12 +12,12 @@
 
         <!-- Scripts -->
         @vite(['resources/js/app.js'])
-        <link rel="stylesheet" href="{{ asset('css/app.css') }}">
+        {{-- <link rel="stylesheet" href="{{ asset('css/app.css') }}">
 
 
         
         <!-- Scripts -->
-        <script src="{{ asset('js/app.js') }}" defer></script>
+        <script src="{{ asset('js/app.js') }}" defer></script> --}}
         @spladeHead
     </head>
     <body class="font-sans antialiased">

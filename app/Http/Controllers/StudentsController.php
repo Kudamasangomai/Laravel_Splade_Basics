@@ -67,7 +67,7 @@ class StudentsController extends Controller
     {
        
     $input = $request->validated();
-    $input['logo'] = $request->file('logo')->store('logos');
+    $input['logo'] = $request->file('logo')->store('public/logos');
       $student = Students::create($input);
         Toast::title('Student Succefully Created!')
                 ->success()
